@@ -95,6 +95,7 @@ describe('Match grid', function() {
 
     // Navigate to job B.
     var opportunities = element(by.css('div#sidebar-opportunities'))
+    browser.sleep(1000);
     opportunities.click();
 
     var rocket = element(by.cssContainingText('td.ng-binding', 'Rocket Science Consulting'));
